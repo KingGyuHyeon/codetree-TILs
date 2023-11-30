@@ -16,7 +16,7 @@ void proc(int a, int b, int c, int *p) {
       }
     }
     printf("0");
-  } else {
+  } else if (a == 3) {
     if (b > c) {
       printf("\n");
       return;
@@ -25,6 +25,9 @@ void proc(int a, int b, int c, int *p) {
       printf("%d ", p[i - 1]);
     }
     printf("\n");
+  } else {
+    printf("x\n");
+    return;
   }
 }
 
